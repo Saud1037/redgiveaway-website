@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FAQ — RedGiveaway</title>
+  <meta name="description" content="Frequently asked questions about RedGiveaway." />
+  <link rel="icon" href="assets/img/logo-placeholder.svg">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo-placeholder.svg" alt="Logo">
+      <span>RedGiveaway</span>
+    </a>
+    <nav class="navlinks">
+      <a data-nav href="index.html">Home</a>
+      <a data-nav href="features.html">Features</a>
+      <a data-nav href="commands.html">Commands</a>
+      <a data-nav href="faq.html">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="page-title">
+    <h1>FAQ</h1>
+    <p>Quick answers to common questions. (Edit these anytime.)</p>
+  </section>
+
+  <section class="section faq">
+    <details open>
+      <summary>What permissions does the bot need?</summary>
+      <p>
+        Common requirements: Send Messages, Embed Links, Read Message History, Add Reactions.
+        Greeting auto-delete may require Manage Messages.
+      </p>
+    </details>
+
+    <details>
+      <summary>Why can’t members join the giveaway?</summary>
+      <p>
+        Make sure the bot can Add Reactions and Read Message History in that channel.
+      </p>
+    </details>
+
+    <details>
+      <summary>Why does the bot not respond to commands?</summary>
+      <p>
+        Check the channel permissions, the bot’s role position, and confirm the correct command prefix.
+      </p>
+    </details>
+
+    <details>
+      <summary>How do I set a custom greeting?</summary>
+      <p>
+        Use <code>!greet set &lt;message&gt;</code>. Variables: <code>{mention}</code>, <code>{username}</code>.
+      </p>
+    </details>
+
+    <details>
+      <summary>Can I add multiple greeting channels?</summary>
+      <p>
+        Yes. Run <code>!greet</code> in each channel you want to toggle on/off.
+      </p>
+    </details>
+  </section>
+
+  <section class="section">
+    <div class="card pad">
+      <h2>Still stuck?</h2>
+      <p class="sub">Join the support server (link placeholder) and we’ll help.</p>
+      <div class="btnrow">
+        <a class="btn" href="https://discord.gg/Rp2Nmt3Zk">Support Server</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div>© <span id="y"></span> RedGiveaway</div>
+    <div class="footer-links">
+      <a href="https://discord.com/oauth2/authorize?client_id=1412048166303568003">Invite</a>
+      <a href="https://discord.gg/Rp2Nmt3Zk">Support</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

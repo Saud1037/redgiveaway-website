@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Commands — RedGiveaway</title>
+  <meta name="description" content="RedGiveaway commands and usage examples." />
+  <link rel="icon" href="assets/img/logo-placeholder.svg">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo-placeholder.svg" alt="Logo">
+      <span>RedGiveaway</span>
+    </a>
+    <nav class="navlinks">
+      <a data-nav href="index.html">Home</a>
+      <a data-nav href="features.html">Features</a>
+      <a data-nav href="commands.html">Commands</a>
+      <a data-nav href="faq.html">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="page-title">
+    <h1>Commands</h1>
+    <p>These are the main public commands. (Edit them as your bot evolves.)</p>
+  </section>
+
+  <section class="section">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Command</th>
+          <th>Description</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>!gstart &lt;time&gt; &lt;winners&gt; &lt;prize&gt;</code></td>
+          <td>Start a giveaway.</td>
+          <td><code>!gstart 1h 1 Nitro</code></td>
+        </tr>
+        <tr>
+          <td><code>!gend &lt;message_id&gt;</code></td>
+          <td>End an active giveaway manually.</td>
+          <td><code>!gend 1234567890</code></td>
+        </tr>
+        <tr>
+          <td><code>!glist</code></td>
+          <td>Show active giveaways in this server.</td>
+          <td><code>!glist</code></td>
+        </tr>
+        <tr>
+          <td><code>!greroll &lt;message_id&gt;</code></td>
+          <td>Reroll winners for an ended giveaway.</td>
+          <td><code>!greroll 1234567890</code></td>
+        </tr>
+        <tr>
+          <td><code>!greet</code></td>
+          <td>Toggle current channel as a greeting channel.</td>
+          <td><code>!greet</code></td>
+        </tr>
+        <tr>
+          <td><code>!greet set &lt;message&gt;</code></td>
+          <td>Set a custom greeting message.</td>
+          <td><code>!greet set Welcome {mention}</code></td>
+        </tr>
+        <tr>
+          <td><code>!greet time &lt;duration&gt;</code></td>
+          <td>Auto-delete greeting messages after a duration.</td>
+          <td><code>!greet time 10s</code></td>
+        </tr>
+        <tr>
+          <td><code>!greet reset</code></td>
+          <td>Remove all greeting channels.</td>
+          <td><code>!greet reset</code></td>
+        </tr>
+        <tr>
+          <td><code>!greet clear</code></td>
+          <td>Clear greeting settings for this server.</td>
+          <td><code>!greet clear</code></td>
+        </tr>
+        <tr>
+          <td><code>!greet test</code></td>
+          <td>Send a test greeting message.</td>
+          <td><code>!greet test</code></td>
+        </tr>
+        <tr>
+          <td><code>!greet stats</code></td>
+          <td>Show current greeting settings.</td>
+          <td><code>!greet stats</code></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="spacer"></div>
+    <div class="card pad">
+      <h3>Variables</h3>
+      <p>Greeting variables you can use: <code>{mention}</code>, <code>{username}</code></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div>© <span id="y"></span> RedGiveaway</div>
+    <div class="footer-links">
+      <a href="YOUR_INVITE_LINK_HERE">Invite</a>
+      <a href="YOUR_SUPPORT_SERVER_LINK_HERE">Support</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
