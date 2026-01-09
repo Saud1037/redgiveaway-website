@@ -1,0 +1,18 @@
+{
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/faq.html", "destination": "/faq", "permanent": true },
+    { "source": "/commands.html", "destination": "/commands", "permanent": true },
+    { "source": "/features.html", "destination": "/features", "permanent": true },
+    { "source": "/privacy.html", "destination": "/privacy", "permanent": true },
+    { "source": "/terms.html", "destination": "/terms", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/faq", "destination": "/faq.html" },
+    { "source": "/commands", "destination": "/commands.html" },
+    { "source": "/features", "destination": "/features.html" },
+    { "source": "/privacy", "destination": "/privacy.html" },
+    { "source": "/terms", "destination": "/terms.html" }
+  ]
+}
