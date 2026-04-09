@@ -6,14 +6,16 @@
   <title>Features — RedGiveaway</title>
   <meta name="description" content="RedGiveaway features overview." />
   <link rel="icon" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+
 <header>
   <div class="container nav">
     <a class="brand" href="index.html">
-      <img src="assets/img/logo.png" alt="Logo">
-      <span>RedGiveaway</span>
+      <img src="assets/img/logo.png" alt="RedGiveaway">
+      <span class="brand-name">RedGiveaway</span>
     </a>
     <nav class="navlinks">
       <a data-nav href="index.html">Home</a>
@@ -21,59 +23,115 @@
       <a data-nav href="commands.html">Commands</a>
       <a data-nav href="faq.html">FAQ</a>
     </nav>
+    <a class="nav-cta" href="https://discord.com/oauth2/authorize?client_id=1412048166303568003">+ Invite Bot</a>
   </div>
 </header>
 
 <main class="container">
-  <section class="page-title">
-    <h1>Features</h1>
-    <p>Everything you need to run clean giveaways and simple greetings.</p>
+
+  <section class="page-hero">
+    <div class="badge"><span class="badge-dot"></span>Features</div>
+    <h1>Built for <span class="gradient-text">simplicity.</span></h1>
+    <p>Everything you need to run clean giveaways and smart greetings — nothing extra.</p>
   </section>
 
+  <hr class="divider">
+
+  <!-- GIVEAWAY FEATURES -->
   <section class="section">
-    <div class="grid features">
-      <div class="card pad">
+    <div class="section-header">
+      <div class="eyebrow">Giveaways</div>
+      <h2>Powerful where it counts.</h2>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feat-icon">🎉</div>
         <h3>Reaction Entry</h3>
-        <p>Members join by reacting with 🎉. Simple and familiar.</p>
+        <p>Members join by reacting with 🎉. A format everyone already knows — no learning curve.</p>
       </div>
-      <div class="card pad">
+      <div class="feature-card">
+        <div class="feat-icon">🏆</div>
         <h3>Winner Selection</h3>
-        <p>Random winner selection based on valid entries.</p>
+        <p>Truly random winner selection from all valid entries. Fair and transparent every time.</p>
       </div>
-      <div class="card pad">
+      <div class="feature-card">
+        <div class="feat-icon">⏹️</div>
         <h3>Manual End</h3>
-        <p>End a giveaway at any time using the command.</p>
+        <p>Need to end early? Use <code>!gend</code> to close any active giveaway instantly.</p>
       </div>
-      <div class="card pad">
+      <div class="feature-card">
+        <div class="feat-icon">📋</div>
         <h3>Giveaway List</h3>
-        <p>View active giveaways in your server with time left.</p>
+        <p>View all active giveaways in your server along with time remaining for each.</p>
       </div>
-      <div class="card pad">
-        <h3>Reroll</h3>
-        <p>Reroll winners for ended giveaways when necessary.</p>
+      <div class="feature-card">
+        <div class="feat-icon">🔄</div>
+        <h3>Reroll Winners</h3>
+        <p>When a winner doesn't claim, reroll in one command. No need to restart anything.</p>
       </div>
-      <div class="card pad">
-        <h3>Greeting System</h3>
-        <p>Custom welcome message, multiple channels, and auto-delete option.</p>
+      <div class="feature-card">
+        <div class="feat-icon">⚙️</div>
+        <h3>Flexible Duration</h3>
+        <p>Set any duration — seconds, minutes, hours. The bot handles the countdown automatically.</p>
       </div>
     </div>
   </section>
 
+  <hr class="divider">
+
+  <!-- GREETING FEATURES -->
   <section class="section">
-    <div class="card pad">
-      <h2>Ready to start?</h2>
-      <p class="sub">Invite the bot and create your first giveaway in minutes.</p>
-      <div class="btnrow">
-        <a class="btn" href="https://discord.com/oauth2/authorize?client_id=1412048166303568003">Invite Bot</a>
-        <a class="btn secondary" href="commands.html">View Commands</a>
+    <div class="section-header">
+      <div class="eyebrow">Greeting System</div>
+      <h2>Welcome members your way.</h2>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feat-icon">✏️</div>
+        <h3>Custom Messages</h3>
+        <p>Write your own welcome text with personalization variables for each new member.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feat-icon">📣</div>
+        <h3>Multiple Channels</h3>
+        <p>Toggle greeting delivery across as many channels as you need — run <code>!greet</code> per channel.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feat-icon">🗑️</div>
+        <h3>Auto-Delete</h3>
+        <p>Keep channels clean by auto-deleting greeting messages after a set duration.</p>
+      </div>
+    </div>
+
+    <div class="info-card" style="margin-top:20px">
+      <h3>Available Variables</h3>
+      <p>Personalize greetings with: <code>{mention}</code> — pings the new member &nbsp;·&nbsp; <code>{username}</code> — their display name</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="cta-card">
+      <h2>Ready to get started?</h2>
+      <p>Invite the bot and create your first giveaway in under a minute.</p>
+      <div class="btn-group" style="justify-content:center">
+        <a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1412048166303568003">Invite Bot →</a>
+        <a class="btn btn-ghost" href="commands.html">View Commands</a>
       </div>
     </div>
   </section>
+
 </main>
 
 <footer>
   <div class="container footer-inner">
-    <div>© <span id="y"></span> RedGiveaway</div>
+    <div class="footer-brand">
+      <img src="assets/img/logo.png" alt="" width="22" height="22" style="border-radius:6px">
+      <span class="brand-name">RedGiveaway</span>
+      <span class="footer-copy">© <span id="y"></span></span>
+    </div>
     <div class="footer-links">
       <a href="https://discord.com/oauth2/authorize?client_id=1412048166303568003">Invite</a>
       <a href="https://discord.gg/gwrm28VnHk">Support</a>
