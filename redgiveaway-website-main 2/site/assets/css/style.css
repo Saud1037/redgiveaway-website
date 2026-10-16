@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FAQ — RedGiveaway</title>
+  <meta name="description" content="Frequently asked questions about RedGiveaway." />
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.png" alt="RedGiveaway">
+      <span class="brand-name">RedGiveaway</span>
+    </a>
+    <nav class="navlinks">
+      <a data-nav href="index.html">Home</a>
+      <a data-nav href="features.html">Features</a>
+      <a data-nav href="commands.html">Commands</a>
+      <a data-nav href="faq.html">FAQ</a>
+    </nav>
+    <a class="nav-cta" href="https://discord.com/oauth2/authorize?client_id=1412048166303568003">+ Invite Bot</a>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="page-hero">
+    <div class="badge"><span class="badge-dot"></span>Help</div>
+    <h1>Frequently <span class="gradient-text">Asked Questions</span></h1>
+    <p>Quick answers to the most common questions about RedGiveaway.</p>
+  </section>
+
+  <hr class="divider">
+
+  <section class="section">
+    <div class="section-header">
+      <div class="eyebrow">Common questions</div>
+      <h2>Find your answer below.</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>What permissions does the bot need?</summary>
+        <div class="faq-answer">
+          The bot requires: <strong>Send Messages</strong>, <strong>Embed Links</strong>, <strong>Read Message History</strong>, and <strong>Add Reactions</strong>. If you're using the auto-delete feature for greetings, it will also need <strong>Manage Messages</strong>.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Why can't members join the giveaway?</summary>
+        <div class="faq-answer">
+          Check that the bot has <strong>Add Reactions</strong> and <strong>Read Message History</strong> permissions in the channel where the giveaway is running.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Why does the bot not respond to commands?</summary>
+        <div class="faq-answer">
+          Verify three things: the bot's role is positioned correctly in your server's role list, it has Send Messages permission in that channel, and you're using the correct prefix <code>!</code>.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How do I set a custom greeting message?</summary>
+        <div class="faq-answer">
+          Use <code>!greet set &lt;your message&gt;</code>. You can include <code>{mention}</code> to ping the new member or <code>{username}</code> to use their name as plain text.
+          <br><br>
+          Example: <code>!greet set Hey {mention}, welcome to the server! 👋</code>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can I add multiple greeting channels?</summary>
+        <div class="faq-answer">
+          Yes. Run <code>!greet</code> in any channel to toggle it as a greeting channel. Run it again to toggle it off. You can have as many greeting channels as you like.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How do I test my greeting message?</summary>
+        <div class="faq-answer">
+          Use <code>!greet test</code> to send a test greeting using your current configuration. This won't affect your server's welcome history.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can I have multiple winners in a giveaway?</summary>
+        <div class="faq-answer">
+          Yes. Set the number of winners in the <code>!gstart</code> command. For example, <code>!gstart 2h 3 Nitro</code> will pick 3 winners after 2 hours.
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="cta-card">
+      <h2>Still have a question?</h2>
+      <p>Join the support server and we'll get you sorted out quickly.</p>
+      <div class="btn-group" style="justify-content:center">
+        <a class="btn btn-primary" href="https://discord.gg/Rp2Nmt3Zk">Join Support Server →</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="assets/img/logo.png" alt="" width="22" height="22" style="border-radius:6px">
+      <span class="brand-name">RedGiveaway</span>
+      <span class="footer-copy">© <span id="y"></span></span>
+    </div>
+    <div class="footer-links">
+      <a href="https://discord.com/oauth2/authorize?client_id=1412048166303568003">Invite</a>
+      <a href="https://discord.gg/Rp2Nmt3Zk">Support</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
