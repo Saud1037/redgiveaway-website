@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FAQ — RedGiveaway</title>
+<meta name="description" content="Answers to common questions about RedGiveaway.">
+<meta name="theme-color" content="#0f0b0c">
+<meta property="og:title" content="FAQ — RedGiveaway">
+<meta property="og:description" content="Answers to common questions about RedGiveaway.">
+<link rel="icon" href="/assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;800&display=swap">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="/"><img src="/assets/img/logo.png" alt="">RedGiveaway</a>
+<nav aria-label="Main"><a href="/">Home</a><a href="/features">Features</a><a href="/commands">Commands</a><a href="/faq">FAQ</a></nav>
+<a class="btn red" href="https://discord.com/oauth2/authorize?client_id=1412048166303568003">Invite bot</a>
+</div></header>
+<main>
+<div class="wrap head"><h1>FAQ</h1><p>Quick answers to common questions.</p></div>
+<div class="wrap" style="max-width:760px;margin:0 auto 72px">
+<details open><summary>What permissions does the bot need?</summary><p>Send Messages, Embed Links, Read Message History and Add Reactions. Greeting auto-delete also needs Manage Messages.</p></details>
+<details><summary>Why can't members join the giveaway?</summary><p>Check that the bot has Add Reactions and Read Message History in the channel where the giveaway runs.</p></details>
+<details><summary>Why doesn't the bot respond to commands?</summary><p>Check three things: the bot's role position in your role list, its Send Messages permission in that channel, and that you're using the <code>!</code> prefix.</p></details>
+<details><summary>How do I set a custom greeting?</summary><p>Use <code>!greet set &lt;message&gt;</code>. Add <code>{mention}</code> to ping the member or <code>{username}</code> for their name. Example: <code>!greet set Hey {mention}, welcome!</code></p></details>
+<details><summary>Can I use multiple greeting channels?</summary><p>Yes. Run <code>!greet</code> in each channel to turn it on, and again to turn it off.</p></details>
+<details><summary>How do I test my greeting?</summary><p>Run <code>!greet test</code> to send a test greeting with your current settings.</p></details>
+<details><summary>Can a giveaway have multiple winners?</summary><p>Yes. Set the number in <code>!gstart</code>. For example, <code>!gstart 2h 3 Nitro</code> picks 3 winners after 2 hours.</p></details>
+
+</div>
+<section class="cta"><div class="wrap"><h2>Still stuck?</h2><p>Join the support server and we'll help.</p><a class="btn red" href="https://discord.gg/gwrm28VnHk">Support server</a></div></section>
+</main>
+<footer><div class="wrap">
+<div>© <span data-year></span> RedGiveaway</div>
+<nav aria-label="Footer"><a href="https://discord.com/oauth2/authorize?client_id=1412048166303568003">Invite</a><a href="https://discord.gg/gwrm28VnHk">Support</a><a href="/privacy">Privacy</a></nav>
+</div></footer>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

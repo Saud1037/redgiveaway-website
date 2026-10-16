@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Commands — RedGiveaway</title>
+<meta name="description" content="All RedGiveaway commands with arguments and examples.">
+<meta name="theme-color" content="#0f0b0c">
+<meta property="og:title" content="Commands — RedGiveaway">
+<meta property="og:description" content="All RedGiveaway commands with arguments and examples.">
+<link rel="icon" href="/assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;800&display=swap">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="/"><img src="/assets/img/logo.png" alt="">RedGiveaway</a>
+<nav aria-label="Main"><a href="/">Home</a><a href="/features">Features</a><a href="/commands">Commands</a><a href="/faq">FAQ</a></nav>
+<a class="btn red" href="https://discord.com/oauth2/authorize?client_id=1412048166303568003">Invite bot</a>
+</div></header>
+<main>
+<div class="wrap head"><h1>Commands</h1><p>Every command, its arguments, and an example. Click a command to copy it.</p></div>
+<div class="wrap">
+<div class="group"><h2>Giveaways</h2><p>Run and manage giveaways.</p>
+<div class="cmd"><button type="button" data-copy="!gstart 1h 1 Nitro" title="Click to copy">!gstart &lt;time&gt; &lt;winners&gt; &lt;prize&gt;</button><div><p>Start a timed giveaway in the current channel.</p><small>!gstart 1h 1 Nitro</small></div></div>
+<div class="cmd"><button type="button" data-copy="!gend 1234567890" title="Click to copy">!gend &lt;message_id&gt;</button><div><p>End an active giveaway before its timer runs out.</p><small>!gend 1234567890</small></div></div>
+<div class="cmd"><button type="button" data-copy="!glist" title="Click to copy">!glist</button><div><p>List active giveaways in this server with time remaining.</p></div></div>
+<div class="cmd"><button type="button" data-copy="!greroll 1234567890" title="Click to copy">!greroll &lt;message_id&gt;</button><div><p>Pick new winners for an ended giveaway.</p><small>!greroll 1234567890</small></div></div>
+</div>
+<div class="group"><h2>Greetings</h2><p>Configure welcome messages. Variables: <code>{mention}</code> pings the member, <code>{username}</code> is their name as plain text.</p>
+<div class="cmd"><button type="button" data-copy="!greet" title="Click to copy">!greet</button><div><p>Toggle the current channel as a greeting channel.</p></div></div>
+<div class="cmd"><button type="button" data-copy="!greet set Welcome {mention}!" title="Click to copy">!greet set &lt;message&gt;</button><div><p>Set a custom greeting message.</p><small>!greet set Welcome {mention}!</small></div></div>
+<div class="cmd"><button type="button" data-copy="!greet time 10s" title="Click to copy">!greet time &lt;duration&gt;</button><div><p>Auto-delete greeting messages after a duration.</p><small>!greet time 10s</small></div></div>
+<div class="cmd"><button type="button" data-copy="!greet reset" title="Click to copy">!greet reset</button><div><p>Remove all greeting channels.</p></div></div>
+<div class="cmd"><button type="button" data-copy="!greet clear" title="Click to copy">!greet clear</button><div><p>Wipe all greeting settings for this server.</p></div></div>
+<div class="cmd"><button type="button" data-copy="!greet test" title="Click to copy">!greet test</button><div><p>Send a test greeting to check your setup.</p></div></div>
+<div class="cmd"><button type="button" data-copy="!greet stats" title="Click to copy">!greet stats</button><div><p>Show this server's current greeting settings.</p></div></div>
+</div>
+</div></main>
+<footer><div class="wrap">
+<div>© <span data-year></span> RedGiveaway</div>
+<nav aria-label="Footer"><a href="https://discord.com/oauth2/authorize?client_id=1412048166303568003">Invite</a><a href="https://discord.gg/gwrm28VnHk">Support</a><a href="/privacy">Privacy</a></nav>
+</div></footer>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
